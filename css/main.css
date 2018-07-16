@@ -1,0 +1,61 @@
+:root {
+	--gray: #bdbdbd;
+	--lightgray: #fafafa;
+	--black: #222;
+}
+
+body {
+	margin: 0 30px;
+	padding: 0;
+	background: linear-gradient(to bottom right, var(--lightgray),var(--gray));
+	color: var(--black);
+	font-family: arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.4;
+    letter-spacing: 1;
+}
+
+a {
+	color: var(--black);
+	text-decoration: none;
+	border-bottom: 2px solid var(--black);
+}
+
+.top, .left, .right ,.bottom {
+	position: absolute;
+	padding: 0;
+	margin: 0;
+}
+
+.top, .bottom {
+	left: 50%;
+}
+
+.left, .right {
+	top: 50%;
+}
+
+.top {
+	transform: translateX(-50%) translateY(50%);
+}
+
+.left {
+	transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+}
+
+.right {
+	transform: translateY(-50%) rotate(90deg);
+	right: -20px;
+}
+
+.bottom {
+	transform: translateX(-50%) translateY(-50%);
+	bottom: 10px;
+}
+
+.gif {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
